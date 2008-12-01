@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	089C165DFE840E0CC02AAC07 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {789, 655}}";
+			sepNavSelRange = "{211, 0}";
+			sepNavVisRect = "{{0, 0}, {789, 655}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA = {
+		activeBuildStyle = 4A9504CDFFE6A4B311CA0CBA;
+		activeExecutable = C99FB4BD09172E0A005EF742;
+		activeTarget = 29B97326FDCFA39411CA2CEA;
+		addToTargets = (
+			29B97326FDCFA39411CA2CEA,
+		);
+		codeSenseManager = C99FB4C809172E43005EF742;
+		executables = (
+			C99FB4BD09172E0A005EF742,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					541,
+					20,
+					98,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					515,
+					111,
+					20,
+					111,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 152522289;
+			PBXPrepackagedSmartGroups_v2 = (
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					activationKey = OldTargetSmartGroup;
+					clz = PBXTargetSmartGroup;
+					description = "Displays all targets of the project.";
+					globalID = 1C37FABC04509CD000000102;
+					name = Targets;
+					preferences = {
+						image = Targets;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXTargetSmartGroup2;
+					description = "Displays all targets of the project as well as nested build phases.";
+					globalID = 1C37FBAC04509CD000000102;
+					name = Targets;
+					preferences = {
+						image = Targets;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXExecutablesSmartGroup;
+					description = "Displays all executables of the project.";
+					globalID = 1C37FAAC04509CD000000102;
+					name = Executables;
+					preferences = {
+						image = Executable;
+					};
+				},
+				{
+					" PBXTransientLocationAtTop " = bottom;
+					absolutePathToBundle = "";
+					clz = PBXErrorsWarningsSmartGroup;
+					description = "Displays files with errors or warnings.";
+					globalID = 1C08E77C0454961000C914BD;
+					name = "Errors and Warnings";
+					preferences = {
+						fnmatch = "";
+						image = WarningsErrors;
+						recursive = 1;
+						regex = "";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXFilenameSmartGroup;
+					description = "Filters items in a given group (potentially recursively) based on matching the name with the regular expression of the filter.";
+					globalID = 1CC0EA4004350EF90044410B;
+					name = "Implementation Files";
+					preferences = {
+						canSave = 1;
+						fnmatch = "";
+						image = SmartFolder;
+						isLeaf = 0;
+						recursive = 1;
+						regex = "?*\\.[mcMC]";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXFilenameSmartGroup;
+					description = "This group displays Interface Builder NIB Files.";
+					globalID = 1CC0EA4004350EF90041110B;
+					name = "NIB Files";
+					preferences = {
+						canSave = 1;
+						fnmatch = "*.nib";
+						image = SmartFolder;
+						isLeaf = 0;
+						recursive = 1;
+						regex = "";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = no;
+					absolutePathToBundle = "";
+					clz = PBXFindSmartGroup;
+					description = "Displays Find Results.";
+					globalID = 1C37FABC05509CD000000102;
+					name = "Find Results";
+					preferences = {
+						image = spyglass;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = no;
+					absolutePathToBundle = "";
+					clz = PBXBookmarksSmartGroup;
+					description = "Displays Project Bookmarks.";
+					globalID = 1C37FABC05539CD112110102;
+					name = Bookmarks;
+					preferences = {
+						image = Bookmarks;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = XCSCMSmartGroup;
+					description = "Displays files with interesting SCM status.";
+					globalID = E2644B35053B69B200211256;
+					name = SCM;
+					preferences = {
+						image = PBXRepository;
+						isLeaf = 0;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXSymbolsSmartGroup;
+					description = "Displays all symbols for the project.";
+					globalID = 1C37FABC04509CD000100104;
+					name = "Project Symbols";
+					preferences = {
+						image = ProjectSymbols;
+						isLeaf = 1;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXFilenameSmartGroup;
+					description = "Filters items in a given group (potentially recursively) based on matching the name with the regular expression of the filter.";
+					globalID = PBXTemplateMarker;
+					name = "Simple Filter SmartGroup";
+					preferences = {
+						canSave = 1;
+						fnmatch = "*.nib";
+						image = SmartFolder;
+						isLeaf = 0;
+						recursive = 1;
+						regex = "";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXFilenameSmartGroup;
+					description = "Filters items in a given group (potentially recursively) based on matching the name with the regular expression of the filter.";
+					globalID = PBXTemplateMarker;
+					name = "Simple Regular Expression SmartGroup";
+					preferences = {
+						canSave = 1;
+						fnmatch = "";
+						image = SmartFolder;
+						isLeaf = 0;
+						recursive = 1;
+						regex = "?*\\.[mcMC]";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					clz = XDDesignSmartGroup;
+					description = "Displays Xdesign models";
+					globalID = 2E4A936305E6979E00701470;
+					name = Design;
+					preferences = {
+						image = Design;
+						isLeaf = 0;
+					};
+				},
+			);
+			PBXWorkspaceStateSaveDate = 152522289;
+		};
+		perUserProjectItems = {
+			C911279809174BE900D42681 = C911279809174BE900D42681;
+			C911279B09174BE900D42681 = C911279B09174BE900D42681;
+			C911279C09174BE900D42681 = C911279C09174BE900D42681;
+			C91127A609174D1100D42681 = C91127A609174D1100D42681;
+			C9742C6909174E5B00A24168 = C9742C6909174E5B00A24168;
+			C9742C6A09174E5B00A24168 = C9742C6A09174E5B00A24168;
+			C9742C6B09174E5B00A24168 = C9742C6B09174E5B00A24168;
+			C9742C7D0917526C00A24168 = C9742C7D0917526C00A24168;
+			C9742C7E0917526C00A24168 = C9742C7E0917526C00A24168;
+			C9E5F1F109173E6E00AF02D3 = C9E5F1F109173E6E00AF02D3;
+			C9E5F2150917447500AF02D3 = C9E5F2150917447500AF02D3;
+			C9E5F2160917447500AF02D3 = C9E5F2160917447500AF02D3;
+			C9E5F2240917497C00AF02D3 = C9E5F2240917497C00AF02D3;
+			C9E5F2260917497C00AF02D3 = C9E5F2260917497C00AF02D3;
+			C9E5F22A091749D400AF02D3 = C9E5F22A091749D400AF02D3;
+			C9E5F24909174A9D00AF02D3 = C9E5F24909174A9D00AF02D3;
+		};
+		sourceControlManager = C99FB4C709172E43005EF742;
+		userBuildSettings = {
+		};
+	};
+	29B97326FDCFA39411CA2CEA = {
+		activeExec = 0;
+		executables = (
+			C99FB4BD09172E0A005EF742,
+		);
+	};
+	8511091304C8685500CF0F78 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {789, 874}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {789, 655}}";
+		};
+	};
+	8511091504C86ACD00CF0F78 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {789, 1152}}";
+			sepNavSelRange = "{1820, 0}";
+			sepNavVisRect = "{{0, 455}, {789, 655}}";
+		};
+	};
+	8550791204C758D600CF0F78 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {789, 655}}";
+			sepNavSelRange = "{754, 5}";
+			sepNavVisRect = "{{0, 0}, {789, 655}}";
+		};
+	};
+	85B6F3DF04BC9C9900CF0F78 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {459, 405}}";
+			sepNavSelRange = "{548, 0}";
+			sepNavVisRect = "{{0, 193}, {459, 198}}";
+		};
+	};
+	85B6F3E004BC9C9900CF0F78 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {789, 2981}}";
+			sepNavSelRange = "{1520, 98}";
+			sepNavVisRect = "{{0, 254}, {789, 655}}";
+		};
+	};
+	C911279809174BE900D42681 = {
+		fRef = 089C165DFE840E0CC02AAC07;
+		isa = PBXTextBookmark;
+		name = "English: 5";
+		rLen = 0;
+		rLoc = 211;
+		rType = 0;
+		vrLen = 289;
+		vrLoc = 0;
+	};
+	C911279B09174BE900D42681 = {
+		fRef = 089C165DFE840E0CC02AAC07;
+		isa = PBXTextBookmark;
+		name = "English: 5";
+		rLen = 0;
+		rLoc = 211;
+		rType = 0;
+		vrLen = 289;
+		vrLoc = 0;
+	};
+	C911279C09174BE900D42681 = {
+		isa = PBXTargetBookmark;
+		trg = 29B97326FDCFA39411CA2CEA;
+	};
+	C91127A609174D1100D42681 = {
+		fRef = C9E5F20E091743F500AF02D3;
+		isa = PBXTextBookmark;
+		name = "iCalToDoAdderScript.txt: 7";
+		rLen = 0;
+		rLoc = 256;
+		rType = 0;
+		vrLen = 587;
+		vrLoc = 0;
+	};
+	C9742C6909174E5B00A24168 = {
+		fRef = 85B6F3E004BC9C9900CF0F78;
+		isa = PBXTextBookmark;
+		name = "-(void)doAddToDoService:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error ";
+		rLen = 98;
+		rLoc = 1520;
+		rType = 0;
+		vrLen = 2250;
+		vrLoc = 553;
+	};
+	C9742C6A09174E5B00A24168 = {
+		isa = PBXTargetBookmark;
+		trg = 29B97326FDCFA39411CA2CEA;
+		uiCtxt = {
+			TOCViewDetailVisibleRect = "{{0, 0}, {565, 233}}";
+			TOCViewExpandedItems = (
+				"com.apple.target-editor-pane.settings",
+				"com.apple.target-editor-pane.settings.simple",
+				"com.apple.target-editor-pane.info-plist",
+				"com.apple.target-editor-pane.info-plist.simple",
+				"com.apple.target-editor-pane.buildphases",
+			);
+			TOCViewMasterVisibleRect = "{{0, 0}, {224, 623}}";
+			TOCViewSelectedItems = (
+				PBXTargetSummarySettingsModule,
+			);
+		};
+	};
+	C9742C6B09174E5B00A24168 = {
+		fRef = 85B6F3E004BC9C9900CF0F78;
+		isa = PBXTextBookmark;
+		name = "-(void)doAddToDoService:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error ";
+		rLen = 98;
+		rLoc = 1520;
+		rType = 0;
+		vrLen = 2250;
+		vrLoc = 553;
+	};
+	C9742C7D0917526C00A24168 = {
+		isa = PBXTargetBookmark;
+		trg = 29B97326FDCFA39411CA2CEA;
+		uiCtxt = {
+			TOCViewDetailVisibleRect = "{{0, 0}, {627, 546}}";
+			TOCViewExpandedItems = (
+				"com.apple.target-editor-pane.settings",
+				"com.apple.target-editor-pane.settings.simple",
+				"com.apple.target-editor-pane.info-plist",
+				"com.apple.target-editor-pane.info-plist.simple",
+				"com.apple.target-editor-pane.buildphases",
+			);
+			TOCViewMasterVisibleRect = "{{0, 0}, {240, 656}}";
+			TOCViewSelectedItems = (
+				PBXInfoPlistExpertSettingsEditorModule,
+			);
+		};
+	};
+	C9742C7E0917526C00A24168 = {
+		fRef = C9E5F20E091743F500AF02D3;
+		isa = PBXTextBookmark;
+		name = "iCalToDoAdderScript.txt: 7";
+		rLen = 0;
+		rLoc = 256;
+		rType = 0;
+		vrLen = 587;
+		vrLoc = 0;
+	};
+	C99FB4BD09172E0A005EF742 = {
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		configStateDict = {
+		};
+		cppStopOnCatchEnabled = 0;
+		cppStopOnThrowEnabled = 0;
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		isa = PBXExecutable;
+		libgmallocEnabled = 0;
+		name = CalendarCreator;
+		shlibInfoDictList = (
+		);
+		sourceDirectories = (
+		);
+	};
+	C99FB4C709172E43005EF742 = {
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		isa = PBXSourceControlManager;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	C99FB4C809172E43005EF742 = {
+		indexTemplatePath = "";
+		isa = PBXCodeSenseManager;
+		usesDefaults = 1;
+		wantsCodeCompletion = 0;
+		wantsCodeCompletionAutoSuggestions = 0;
+		wantsCodeCompletionCaseSensitivity = 1;
+		wantsCodeCompletionListAlways = 1;
+		wantsCodeCompletionOnlyMatchingItems = 1;
+		wantsCodeCompletionParametersIncluded = 1;
+		wantsCodeCompletionPlaceholdersInserted = 1;
+		wantsCodeCompletionTabCompletes = 1;
+		wantsIndex = 0;
+	};
+	C9E5F1F109173E6E00AF02D3 = {
+		fRef = 85B6F3DF04BC9C9900CF0F78;
+		isa = PBXTextBookmark;
+		name = "QICalendarCreator.h: 18";
+		rLen = 0;
+		rLoc = 359;
+		rType = 0;
+		vrLen = 553;
+		vrLoc = 0;
+	};
+	C9E5F20E091743F500AF02D3 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {711, 443}}";
+			sepNavSelRange = "{256, 0}";
+			sepNavVisRect = "{{0, 0}, {711, 443}}";
+			sepNavWindowFrame = "{{15, 269}, {750, 558}}";
+		};
+	};
+	C9E5F2150917447500AF02D3 = {
+		fRef = 8511091304C8685500CF0F78;
+		isa = PBXTextBookmark;
+		name = "License.rtf: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2172;
+		vrLoc = 0;
+	};
+	C9E5F2160917447500AF02D3 = {
+		fRef = 8511091504C86ACD00CF0F78;
+		isa = PBXTextBookmark;
+		name = "ReadMe.rtfd: 23";
+		rLen = 0;
+		rLoc = 1820;
+		rType = 0;
+		vrLen = 1724;
+		vrLoc = 1056;
+	};
+	C9E5F2240917497C00AF02D3 = {
+		fRef = 8550791204C758D600CF0F78;
+		isa = PBXTextBookmark;
+		name = hours;
+		rLen = 5;
+		rLoc = 754;
+		rType = 0;
+		vrLen = 792;
+		vrLoc = 0;
+	};
+	C9E5F2260917497C00AF02D3 = {
+		fRef = 8550791204C758D600CF0F78;
+		isa = PBXTextBookmark;
+		name = hours;
+		rLen = 5;
+		rLoc = 754;
+		rType = 0;
+		vrLen = 792;
+		vrLoc = 0;
+	};
+	C9E5F22A091749D400AF02D3 = {
+		fRef = C9E5F20E091743F500AF02D3;
+		isa = PBXTextBookmark;
+		name = "iCalToDoAdderScript.txt: 3";
+		rLen = 0;
+		rLoc = 84;
+		rType = 0;
+		vrLen = 587;
+		vrLoc = 0;
+	};
+	C9E5F24909174A9D00AF02D3 = {
+		fRef = 85B6F3E004BC9C9900CF0F78;
+		isa = PBXTextBookmark;
+		name = "QICalendarCreator.m: 130";
+		rLen = 0;
+		rLoc = 7295;
+		rType = 0;
+		vrLen = 2666;
+		vrLoc = 6409;
+	};
+}

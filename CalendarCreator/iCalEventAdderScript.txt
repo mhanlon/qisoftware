@@ -1,0 +1,15 @@
+tell application "iCal"
+	set calTitle to "QI_CAL_TITLE"
+	set myDescription to "QI_EVENT_DESCRIPTION"
+	if ((count of (calendars whose title is calTitle)) is 0) then
+		create calendar with name calTitle
+	end if
+        set myCal to (item 1 of (calendars whose title is calTitle))
+        set myDate to current date
+	set time of myDate to QI_TIME
+	set year of myDate to QI_YEAR
+	set month of myDate to QI_MONTH_NAME
+	set day of myDate to QI_DAY
+	--set myEvent to make new event at the end of events of (item 1 of (calendars whose title is calTitle)) with properties {start date:myDate, end date:myDate + 1 * hours, summary:myDescription}
+	set myEvent to make new event at the end of events of myCal with properties {start date:myDate, end date:myDate + 1 * hours, summary:myDescription}
+end tell

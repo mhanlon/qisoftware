@@ -1,0 +1,75 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf420
+{\fonttbl\f0\fswiss\fcharset77 Helvetica-Bold;\f1\fswiss\fcharset77 Helvetica;\f2\fmodern\fcharset77 Courier;
+\f3\fswiss\fcharset77 Helvetica-Oblique;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+
+\f0\b\fs24 \cf0 CalendarCreator.service 1.1\
+
+\f1\b0 CalendarCreator is a service that will take whatever text you have selected and make an entry in iCal for you.\
+\
+Just drop this in your ~/Library/Services folder, log out, log back in, and presto-chango! You can now do all the cool stuff we tell you about in this Read Me! If a Services directory doesn't exist in your Library directory, you should create one.\
+\
+
+\f0\b Requirements:\
+
+\f1\b0 This service requires that you have iCal installed to work.\
+\
+CalendarCreator provides two services.\
+
+\f0\b CalendarCreator/Add Calendar Event
+\f1\b0 \
+	Add Calendar Event will take whatever text you've selected an attempt to parse it into a date that it can enter into iCal. The event will show up in a new calendar called "CalendarCreator", which will be created for you if it doesn't exist. iCal gets launched to add the event or appointment, so you can simply change with which calendar the event is associated straight away.\
+\
+In this screenshot, the user could select any of the sentences in the visible Stickie Note and an event will be created on 19 July, 2003.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 {{\NeXTGraphic iCal-CalendarCreator.pdf \width11720 \height9820
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+
+\f0\b \cf0 \
+CalendarCreator/Add To Do
+\f1\b0 \
+	Add To Do will take whatever text you've selected an attempt to parse it into a date that it can enter into iCal as a To Do item. The to do will show up in a new calendar called "CalendarCreator", which will be created for you if it doesn't exist. iCal gets launched to add the event or appointment, so you can simply change with which calendar the to do is associated straight away. Or, you can use the Secret Sauce. What's that, you say?
+\f0\b \
+\
+Secret Sauce:
+\f1\b0 \
+If you would like to have CalendarCreator create an event or to do in a calendar other than our relatively arbitrary "CalendarCreator" calendar, you can perform the following chicken sacrifice at the command line:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+
+\f2 \cf0 	defaults write com.qisoftware.calendarcreator "DefaultCalendarName" "Home"
+\f1 \
+Where "Home" is the name of the calendar I wanted to have my events or to dos created in, by default.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+
+\f0\b \cf0 The Future:
+\f1\b0 \
+We are thinking about having the date parsing be even slightly more intelligent, by being able to specify ranges of time and dates, and recurrences. If you think these are a good idea, please drop us a mail at 
+\f3\i software@supertart.com
+\f1\i0 .\
+\
+We're also planning on adding support for the NSFilenamesPboardType, so you can select a file and add it to a to do or event... this is planned for a future release.\
+\
+A lot of the additions we make to our software come from users like you, so please do send in your feedback, we're more than happy to take a look at suggestions for improving our software.\
+\
+\
+
+\f0\b For Developers:
+\f1\b0 \
+This is why Cocoa is so cool. NSDate does all this stuff for you, with the method \
++(NSDate *)dateWithNaturalLanguageString:(NSString *)aString, we get automatic date parsing. And with the new(ish) NSAppleScript class, we can use iCal's scripting capabilities to add events without mucking about with private frameworks.\
+\
+Also, if you'd like a copy of the source for this service, mail the contact address below, and you'd better have some pretty damn good reasons for wanting to see the source. Just kidding, you don't even have to have any reasons. How about 
+\f3\i that 
+\f1\i0 for a bunch of nice, friendly, hygenic developers?\
+\
+See http://supertart.com/software/CalendarCreator/ for more information and the license terms.\
+\
+It is covered under the Q.I. Software Public license.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+
+\f3\i \cf0 software@supertart.com}

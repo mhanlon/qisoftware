@@ -1,0 +1,14 @@
+tell application "iCal"
+	set calTitle to "QI_CAL_TITLE"
+	set myDescription to "QI_EVENT_DESCRIPTION"
+	if ((count of (calendars whose title is calTitle)) is 0) then
+		create calendar with name calTitle
+	end if
+        set myCal to (item 1 of (calendars whose title is calTitle))
+        set myDate to current date
+	set time of myDate to QI_TIME
+	set year of myDate to QI_YEAR
+	set month of myDate to QI_MONTH_NAME
+	set day of myDate to QI_DAY
+	set myToDo to make new todo at the end of todos of myCal with properties {due date:myDate, priority:QI_PRIORITY, summary:myDescription}
+end tell
