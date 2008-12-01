@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXApplicationTarget section */
+		29B97326FDCFA39411CA2CEA /* ContactCreator */ = {
+			isa = PBXApplicationTarget;
+			buildConfigurationList = 4FA7E11D0CBBCF920074256B /* Build configuration list for PBXApplicationTarget "ContactCreator" */;
+			buildPhases = (
+				29B97327FDCFA39411CA2CEA /* Headers */,
+				29B97328FDCFA39411CA2CEA /* Resources */,
+				29B9732BFDCFA39411CA2CEA /* Sources */,
+				29B9732DFDCFA39411CA2CEA /* Frameworks */,
+			);
+			dependencies = (
+			);
+			name = ContactCreator;
+			productInstallPath = "$(HOME)/Services";
+			productName = ContactCreator;
+			productReference = 17587328FF379C6511CA2CBB /* ContactCreator.service */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>ContactCreator</string>
+	<key>CFBundleIconFile</key>
+	<string>QIContactCreator</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.qisoftware.contactcreator</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.1</string>
+	<key>NSBGOnly</key>
+	<string>1</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSServices</key>
+	<array>
+		<dict>
+			<key>NSKeyEquivalent</key>
+			<dict>
+				<key>default</key>
+				<string>C</string>
+			</dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>ContactCreator/Add List of Contacts</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>doAddListOfContactsService</string>
+			<key>NSPortName</key>
+			<string>ContactCreator</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSKeyEquivalent</key>
+			<dict>
+				<key>default</key>
+				<string>A</string>
+			</dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>ContactCreator/Add Contact</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>doAddContactService</string>
+			<key>NSPortName</key>
+			<string>ContactCreator</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
+";
+		};
+/* End PBXApplicationTarget section */
+
+/* Begin PBXBuildFile section */
+		080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		29B9732CFDCFA39411CA2CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		32CA4F650368D2AA00C91783 /* ContactCreator_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* ContactCreator_Prefix.h */; };
+		4F33722903F9778D00450691 /* QIContactCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F33722703F9778D00450691 /* QIContactCreator.h */; };
+		4F33722A03F9778D00450691 /* QIContactCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F33722803F9778D00450691 /* QIContactCreator.m */; };
+		4F33723403F9786D00450691 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F33723303F9786D00450691 /* AddressBook.framework */; };
+		4F68BB0D040FBFD200000010 /* License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4F68BB0C040FBFD200000010 /* License.rtf */; };
+		4F68BB0E040FBFD900000010 /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4FEACFE703FEF68B00A80027 /* ReadMe.rtf */; };
+		4FA7E1230CBBCF920074256B /* ContactCreator_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* ContactCreator_Prefix.h */; };
+		4FA7E1240CBBCF920074256B /* QIContactCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F33722703F9778D00450691 /* QIContactCreator.h */; };
+		4FA7E1260CBBCF920074256B /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		4FA7E1270CBBCF920074256B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		4FA7E1280CBBCF920074256B /* License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4F68BB0C040FBFD200000010 /* License.rtf */; };
+		4FA7E1290CBBCF920074256B /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4FEACFE703FEF68B00A80027 /* ReadMe.rtf */; };
+		4FA7E12A0CBBCF920074256B /* QIContactCreator.icns in Resources */ = {isa = PBXBuildFile; fileRef = 850670D004DEB75E004D1284 /* QIContactCreator.icns */; };
+		4FA7E12C0CBBCF920074256B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		4FA7E12D0CBBCF920074256B /* QIContactCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F33722803F9778D00450691 /* QIContactCreator.m */; };
+		4FA7E12F0CBBCF920074256B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		4FA7E1300CBBCF920074256B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F33723303F9786D00450691 /* AddressBook.framework */; };
+		850670D104DEB75E004D1284 /* QIContactCreator.icns in Resources */ = {isa = PBXBuildFile; fileRef = 850670D004DEB75E004D1284 /* QIContactCreator.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		17587328FF379C6511CA2CBB /* ContactCreator.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = ContactCreator.service; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* ContactCreator_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCreator_Prefix.h; sourceTree = "<group>"; };
+		4F33722703F9778D00450691 /* QIContactCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIContactCreator.h; sourceTree = "<group>"; };
+		4F33722803F9778D00450691 /* QIContactCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIContactCreator.m; sourceTree = "<group>"; };
+		4F33723303F9786D00450691 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = /System/Library/Frameworks/AddressBook.framework; sourceTree = "<absolute>"; };
+		4F68BB0C040FBFD200000010 /* License.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = License.rtf; sourceTree = "<group>"; };
+		4FA7E1350CBBCF930074256B /* Info-ContactCreator__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-ContactCreator__Upgraded_.plist"; sourceTree = "<group>"; };
+		4FA7E1360CBBCF930074256B /* ContactCreator.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactCreator.service; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FEACFE703FEF68B00A80027 /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		850670D004DEB75E004D1284 /* QIContactCreator.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = QIContactCreator.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29B9732DFDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */,
+				4F33723403F9786D00450691 /* AddressBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA7E12E0CBBCF920074256B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA7E12F0CBBCF920074256B /* Cocoa.framework in Frameworks */,
+				4FA7E1300CBBCF920074256B /* AddressBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4F33722703F9778D00450691 /* QIContactCreator.h */,
+				4F33722803F9778D00450691 /* QIContactCreator.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				4F33723303F9786D00450691 /* AddressBook.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17587328FF379C6511CA2CBB /* ContactCreator.service */,
+				4FA7E1360CBBCF930074256B /* ContactCreator.service */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* ContactCreator */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				4FA7E1350CBBCF930074256B /* Info-ContactCreator__Upgraded_.plist */,
+			);
+			name = ContactCreator;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* ContactCreator_Prefix.h */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				4FEACFE703FEF68B00A80027 /* ReadMe.rtf */,
+				4F68BB0C040FBFD200000010 /* License.rtf */,
+				850670D004DEB75E004D1284 /* QIContactCreator.icns */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29B97327FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CA4F650368D2AA00C91783 /* ContactCreator_Prefix.h in Headers */,
+				4F33722903F9778D00450691 /* QIContactCreator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA7E1220CBBCF920074256B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA7E1230CBBCF920074256B /* ContactCreator_Prefix.h in Headers */,
+				4FA7E1240CBBCF920074256B /* QIContactCreator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4FA7E1210CBBCF920074256B /* ContactCreator (Upgraded) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA7E1310CBBCF920074256B /* Build configuration list for PBXNativeTarget "ContactCreator (Upgraded)" */;
+			buildPhases = (
+				4FA7E1220CBBCF920074256B /* Headers */,
+				4FA7E1250CBBCF920074256B /* Resources */,
+				4FA7E12B0CBBCF920074256B /* Sources */,
+				4FA7E12E0CBBCF920074256B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ContactCreator (Upgraded)";
+			productInstallPath = "$(HOME)/Services";
+			productName = ContactCreator;
+			productReference = 4FA7E1360CBBCF930074256B /* ContactCreator.service */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4FA7E1380CBBCF940074256B /* Build configuration list for PBXProject "ContactCreator" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* ContactCreator */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FA7E1210CBBCF920074256B /* ContactCreator (Upgraded) */,
+				29B97326FDCFA39411CA2CEA /* ContactCreator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29B97328FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */,
+				089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */,
+				4F68BB0D040FBFD200000010 /* License.rtf in Resources */,
+				4F68BB0E040FBFD900000010 /* ReadMe.rtf in Resources */,
+				850670D104DEB75E004D1284 /* QIContactCreator.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA7E1250CBBCF920074256B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA7E1260CBBCF920074256B /* MainMenu.nib in Resources */,
+				4FA7E1270CBBCF920074256B /* InfoPlist.strings in Resources */,
+				4FA7E1280CBBCF920074256B /* License.rtf in Resources */,
+				4FA7E1290CBBCF920074256B /* ReadMe.rtf in Resources */,
+				4FA7E12A0CBBCF920074256B /* QIContactCreator.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29B9732BFDCFA39411CA2CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B9732CFDCFA39411CA2CEA /* main.m in Sources */,
+				4F33722A03F9778D00450691 /* QIContactCreator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA7E12B0CBBCF920074256B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA7E12C0CBBCF920074256B /* main.m in Sources */,
+				4FA7E12D0CBBCF920074256B /* QIContactCreator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FA7E11E0CBBCF920074256B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Services";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = ContactCreator_Prefix.h;
+				PRODUCT_NAME = ContactCreator;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = service;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4FA7E11F0CBBCF920074256B /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Services";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = ContactCreator_Prefix.h;
+				PRODUCT_NAME = ContactCreator;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = service;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		4FA7E1200CBBCF920074256B /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Services";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = ContactCreator_Prefix.h;
+				PRODUCT_NAME = ContactCreator;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = service;
+			};
+			name = Default;
+		};
+		4FA7E1320CBBCF920074256B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ContactCreator_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-ContactCreator__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Services";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = ContactCreator;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = service;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4FA7E1330CBBCF920074256B /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ContactCreator_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-ContactCreator__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Services";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = ContactCreator;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = service;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		4FA7E1340CBBCF920074256B /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ContactCreator_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-ContactCreator__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Services";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = ContactCreator;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = service;
+			};
+			name = Default;
+		};
+		4FA7E1390CBBCF940074256B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		4FA7E13A0CBBCF940074256B /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+		4FA7E13B0CBBCF940074256B /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FA7E11D0CBBCF920074256B /* Build configuration list for PBXApplicationTarget "ContactCreator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA7E11E0CBBCF920074256B /* Development */,
+				4FA7E11F0CBBCF920074256B /* Deployment */,
+				4FA7E1200CBBCF920074256B /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		4FA7E1310CBBCF920074256B /* Build configuration list for PBXNativeTarget "ContactCreator (Upgraded)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA7E1320CBBCF920074256B /* Development */,
+				4FA7E1330CBBCF920074256B /* Deployment */,
+				4FA7E1340CBBCF920074256B /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		4FA7E1380CBBCF940074256B /* Build configuration list for PBXProject "ContactCreator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA7E1390CBBCF940074256B /* Development */,
+				4FA7E13A0CBBCF940074256B /* Deployment */,
+				4FA7E13B0CBBCF940074256B /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
