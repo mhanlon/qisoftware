@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {addEvent = id; }; 
+            CLASS = QICalendarCreator; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {calsComboBox = NSComboBox; myWindow = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

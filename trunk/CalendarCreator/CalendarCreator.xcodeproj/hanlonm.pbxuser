@@ -1,0 +1,156 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Deployment;
+		activeExecutable = 4FA7E1820CBBD71E0074256B /* CalendarCreator (Upgraded) */;
+		activeTarget = 4FA7E16A0CBBD71E0074256B /* CalendarCreator (Upgraded) */;
+		codeSenseManager = 4FA7E1690CBBD7060074256B /* Code sense */;
+		executables = (
+			4FA7E15A0CBBD7040074256B /* CalendarCreator */,
+			4FA7E1820CBBD71E0074256B /* CalendarCreator (Upgraded) */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					271,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 249850307;
+			PBXWorkspaceStateSaveDate = 249850307;
+		};
+		perUserProjectItems = {
+			4F4DAF930EE469D200554146 /* PlistBookmark */ = 4F4DAF930EE469D200554146 /* PlistBookmark */;
+			4F8394B70CBBD986003F4394 = 4F8394B70CBBD986003F4394 /* PBXBookmark */;
+			4F8394C10CBBF068003F4394 = 4F8394C10CBBF068003F4394 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 4FA7E1680CBBD7060074256B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97326FDCFA39411CA2CEA /* CalendarCreator */ = {
+		activeExec = 0;
+		executables = (
+			4FA7E15A0CBBD7040074256B /* CalendarCreator */,
+		);
+	};
+	4F4DAF930EE469D200554146 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 4FA7E1800CBBD71E0074256B /* Info-CalendarCreator__Upgraded_.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Volumes/Data-3/Users/mhanlon/Development/ForGSVN/CalendarCreator/Info-CalendarCreator__Upgraded_.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	4F8394B70CBBD986003F4394 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 4FA7E1800CBBD71E0074256B /* Info-CalendarCreator__Upgraded_.plist */;
+	};
+	4F8394C10CBBF068003F4394 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4FA7E1800CBBD71E0074256B /* Info-CalendarCreator__Upgraded_.plist */;
+		name = "Info-CalendarCreator__Upgraded_.plist: 32";
+		rLen = 0;
+		rLoc = 979;
+		rType = 0;
+		vrLen = 1160;
+		vrLoc = 0;
+	};
+	4FA7E15A0CBBD7040074256B /* CalendarCreator */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = CalendarCreator;
+		sourceDirectories = (
+		);
+	};
+	4FA7E1680CBBD7060074256B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	4FA7E1690CBBD7060074256B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	4FA7E16A0CBBD71E0074256B /* CalendarCreator (Upgraded) */ = {
+		activeExec = 0;
+		executables = (
+			4FA7E1820CBBD71E0074256B /* CalendarCreator (Upgraded) */,
+		);
+	};
+	4FA7E1800CBBD71E0074256B /* Info-CalendarCreator__Upgraded_.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {469, 1106}}";
+			sepNavSelRange = "{979, 0}";
+			sepNavVisRect = "{{0, 0}, {469, 584}}";
+		};
+	};
+	4FA7E1820CBBD71E0074256B /* CalendarCreator (Upgraded) */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "CalendarCreator (Upgraded)";
+		sourceDirectories = (
+		);
+	};
+	85B6F3E004BC9C9900CF0F78 /* QICalendarCreator.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {802, 2996}}";
+			sepNavSelRange = "{11411, 0}";
+			sepNavVisRect = "{{0, 0}, {802, 367}}";
+		};
+	};
+}

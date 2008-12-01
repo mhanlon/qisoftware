@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXApplicationTarget section */
+		29B97326FDCFA39411CA2CEA /* CalendarCreator */ = {
+			isa = PBXApplicationTarget;
+			buildConfigurationList = 4FA7E1600CBBD7060074256B /* Build configuration list for PBXApplicationTarget "CalendarCreator" */;
+			buildPhases = (
+				29B97327FDCFA39411CA2CEA /* Headers */,
+				29B97328FDCFA39411CA2CEA /* Resources */,
+				29B9732BFDCFA39411CA2CEA /* Sources */,
+				29B9732DFDCFA39411CA2CEA /* Frameworks */,
+			);
+			dependencies = (
+			);
+			name = CalendarCreator;
+			productInstallPath = "$(HOME)/Applications";
+			productName = CalendarCreator;
+			productReference = 17587328FF379C6511CA2CBB /* CalendarCreator.service */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>CalendarCreator</string>
+	<key>CFBundleGetInfoString</key>
+	<string>1.0.3</string>
+	<key>CFBundleIconFile</key>
+	<string>QICalendarCreator</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.qisoftware.calendarcreator</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>1.0.3</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.3</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.3</string>
+	<key>NSBGOnly</key>
+	<string>1</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSServices</key>
+	<array>
+		<dict>
+			<key>NSKeyEquivalent</key>
+			<dict>
+				<key>default</key>
+				<string>T</string>
+			</dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>CalendarCreator/Add To Do</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>doAddToDoService</string>
+			<key>NSPortName</key>
+			<string>CalendarCreator</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSKeyEquivalent</key>
+			<dict>
+				<key>default</key>
+				<string>D</string>
+			</dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>CalendarCreator/Add Calendar Event</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>doAddEventService</string>
+			<key>NSPortName</key>
+			<string>CalendarCreator</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
+";
+		};
+/* End PBXApplicationTarget section */
+
+/* Begin PBXBuildFile section */
+		080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		29B9732CFDCFA39411CA2CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		32CA4F650368D2AA00C91783 /* CalendarCreator_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* CalendarCreator_Prefix.h */; };
+		4FA7E16C0CBBD71E0074256B /* CalendarCreator_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* CalendarCreator_Prefix.h */; };
+		4FA7E16D0CBBD71E0074256B /* QICalendarCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B6F3DF04BC9C9900CF0F78 /* QICalendarCreator.h */; };
+		4FA7E16F0CBBD71E0074256B /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		4FA7E1700CBBD71E0074256B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		4FA7E1710CBBD71E0074256B /* iCalEventAdderScript.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8550791204C758D600CF0F78 /* iCalEventAdderScript.txt */; };
+		4FA7E1720CBBD71E0074256B /* QICalendarCreator.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8550795A04C75F7600CF0F78 /* QICalendarCreator.icns */; };
+		4FA7E1730CBBD71E0074256B /* License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8511091304C8685500CF0F78 /* License.rtf */; };
+		4FA7E1740CBBD71E0074256B /* ReadMe.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 8511091504C86ACD00CF0F78 /* ReadMe.rtfd */; };
+		4FA7E1750CBBD71E0074256B /* CalendarCreator.nib in Resources */ = {isa = PBXBuildFile; fileRef = 855C0FD708E6583A00EDCC39 /* CalendarCreator.nib */; };
+		4FA7E1760CBBD71E0074256B /* iCalToDoAdderScript.txt in Resources */ = {isa = PBXBuildFile; fileRef = C9E5F20E091743F500AF02D3 /* iCalToDoAdderScript.txt */; };
+		4FA7E1780CBBD71E0074256B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		4FA7E1790CBBD71E0074256B /* QICalendarCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B6F3E004BC9C9900CF0F78 /* QICalendarCreator.m */; };
+		4FA7E17B0CBBD71E0074256B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		8511091404C8685500CF0F78 /* License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8511091304C8685500CF0F78 /* License.rtf */; };
+		8511091604C86ACD00CF0F78 /* ReadMe.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 8511091504C86ACD00CF0F78 /* ReadMe.rtfd */; };
+		8550791304C758D600CF0F78 /* iCalEventAdderScript.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8550791204C758D600CF0F78 /* iCalEventAdderScript.txt */; };
+		8550795B04C75F7600CF0F78 /* QICalendarCreator.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8550795A04C75F7600CF0F78 /* QICalendarCreator.icns */; };
+		855C0FD808E6583A00EDCC39 /* CalendarCreator.nib in Resources */ = {isa = PBXBuildFile; fileRef = 855C0FD708E6583A00EDCC39 /* CalendarCreator.nib */; };
+		85B6F3E104BC9C9900CF0F78 /* QICalendarCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B6F3DF04BC9C9900CF0F78 /* QICalendarCreator.h */; };
+		85B6F3E204BC9C9900CF0F78 /* QICalendarCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B6F3E004BC9C9900CF0F78 /* QICalendarCreator.m */; };
+		C9E5F20F091743F500AF02D3 /* iCalToDoAdderScript.txt in Resources */ = {isa = PBXBuildFile; fileRef = C9E5F20E091743F500AF02D3 /* iCalToDoAdderScript.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		17587328FF379C6511CA2CBB /* CalendarCreator.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = CalendarCreator.service; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* CalendarCreator_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarCreator_Prefix.h; sourceTree = "<group>"; };
+		4FA7E1800CBBD71E0074256B /* Info-CalendarCreator__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-CalendarCreator__Upgraded_.plist"; sourceTree = "<group>"; };
+		4FA7E1810CBBD71E0074256B /* CalendarCreator.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarCreator.service; sourceTree = BUILT_PRODUCTS_DIR; };
+		8511091304C8685500CF0F78 /* License.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = License.rtf; sourceTree = "<group>"; };
+		8511091504C86ACD00CF0F78 /* ReadMe.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = ReadMe.rtfd; sourceTree = "<group>"; };
+		8550791204C758D600CF0F78 /* iCalEventAdderScript.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iCalEventAdderScript.txt; sourceTree = "<group>"; };
+		8550795A04C75F7600CF0F78 /* QICalendarCreator.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = QICalendarCreator.icns; sourceTree = "<group>"; };
+		855C0FD708E6583A00EDCC39 /* CalendarCreator.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = CalendarCreator.nib; sourceTree = "<group>"; };
+		85B6F3DF04BC9C9900CF0F78 /* QICalendarCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICalendarCreator.h; sourceTree = "<group>"; };
+		85B6F3E004BC9C9900CF0F78 /* QICalendarCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICalendarCreator.m; sourceTree = "<group>"; };
+		C9E5F20E091743F500AF02D3 /* iCalToDoAdderScript.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = iCalToDoAdderScript.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29B9732DFDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA7E17A0CBBD71E0074256B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA7E17B0CBBD71E0074256B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				85B6F3DF04BC9C9900CF0F78 /* QICalendarCreator.h */,
+				85B6F3E004BC9C9900CF0F78 /* QICalendarCreator.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17587328FF379C6511CA2CBB /* CalendarCreator.service */,
+				4FA7E1810CBBD71E0074256B /* CalendarCreator.service */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CalendarCreator */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				4FA7E1800CBBD71E0074256B /* Info-CalendarCreator__Upgraded_.plist */,
+			);
+			name = CalendarCreator;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* CalendarCreator_Prefix.h */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				855C0FD708E6583A00EDCC39 /* CalendarCreator.nib */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				8550791204C758D600CF0F78 /* iCalEventAdderScript.txt */,
+				C9E5F20E091743F500AF02D3 /* iCalToDoAdderScript.txt */,
+				8550795A04C75F7600CF0F78 /* QICalendarCreator.icns */,
+				8511091304C8685500CF0F78 /* License.rtf */,
+				8511091504C86ACD00CF0F78 /* ReadMe.rtfd */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29B97327FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CA4F650368D2AA00C91783 /* CalendarCreator_Prefix.h in Headers */,
+				85B6F3E104BC9C9900CF0F78 /* QICalendarCreator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA7E16B0CBBD71E0074256B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA7E16C0CBBD71E0074256B /* CalendarCreator_Prefix.h in Headers */,
+				4FA7E16D0CBBD71E0074256B /* QICalendarCreator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4FA7E16A0CBBD71E0074256B /* CalendarCreator (Upgraded) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA7E17C0CBBD71E0074256B /* Build configuration list for PBXNativeTarget "CalendarCreator (Upgraded)" */;
+			buildPhases = (
+				4FA7E16B0CBBD71E0074256B /* Headers */,
+				4FA7E16E0CBBD71E0074256B /* Resources */,
+				4FA7E1770CBBD71E0074256B /* Sources */,
+				4FA7E17A0CBBD71E0074256B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CalendarCreator (Upgraded)";
+			productInstallPath = "$(HOME)/Applications";
+			productName = CalendarCreator;
+			productReference = 4FA7E1810CBBD71E0074256B /* CalendarCreator.service */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4FA7E1640CBBD7060074256B /* Build configuration list for PBXProject "CalendarCreator" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CalendarCreator */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FA7E16A0CBBD71E0074256B /* CalendarCreator (Upgraded) */,
+				29B97326FDCFA39411CA2CEA /* CalendarCreator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29B97328FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */,
+				089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */,
+				8550791304C758D600CF0F78 /* iCalEventAdderScript.txt in Resources */,
+				8550795B04C75F7600CF0F78 /* QICalendarCreator.icns in Resources */,
+				8511091404C8685500CF0F78 /* License.rtf in Resources */,
+				8511091604C86ACD00CF0F78 /* ReadMe.rtfd in Resources */,
+				855C0FD808E6583A00EDCC39 /* CalendarCreator.nib in Resources */,
+				C9E5F20F091743F500AF02D3 /* iCalToDoAdderScript.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA7E16E0CBBD71E0074256B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA7E16F0CBBD71E0074256B /* MainMenu.nib in Resources */,
+				4FA7E1700CBBD71E0074256B /* InfoPlist.strings in Resources */,
+				4FA7E1710CBBD71E0074256B /* iCalEventAdderScript.txt in Resources */,
+				4FA7E1720CBBD71E0074256B /* QICalendarCreator.icns in Resources */,
+				4FA7E1730CBBD71E0074256B /* License.rtf in Resources */,
+				4FA7E1740CBBD71E0074256B /* ReadMe.rtfd in Resources */,
+				4FA7E1750CBBD71E0074256B /* CalendarCreator.nib in Resources */,
+				4FA7E1760CBBD71E0074256B /* iCalToDoAdderScript.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29B9732BFDCFA39411CA2CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B9732CFDCFA39411CA2CEA /* main.m in Sources */,
+				85B6F3E204BC9C9900CF0F78 /* QICalendarCreator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA7E1770CBBD71E0074256B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA7E1780CBBD71E0074256B /* main.m in Sources */,
+				4FA7E1790CBBD71E0074256B /* QICalendarCreator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FA7E1610CBBD7060074256B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Library/Services/";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = CalendarCreator_Prefix.h;
+				PRODUCT_NAME = CalendarCreator;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = service;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4FA7E1620CBBD7060074256B /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Library/Services/";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = CalendarCreator_Prefix.h;
+				PRODUCT_NAME = CalendarCreator;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = service;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		4FA7E1630CBBD7060074256B /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Library/Services/";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = CalendarCreator_Prefix.h;
+				PRODUCT_NAME = CalendarCreator;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = service;
+			};
+			name = Default;
+		};
+		4FA7E1650CBBD7060074256B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		4FA7E1660CBBD7060074256B /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+		4FA7E1670CBBD7060074256B /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+		4FA7E17D0CBBD71E0074256B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CalendarCreator_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-CalendarCreator__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Library/Services/";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = CalendarCreator;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = service;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4FA7E17E0CBBD71E0074256B /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CalendarCreator_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-CalendarCreator__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Library/Services/";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = CalendarCreator;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = service;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		4FA7E17F0CBBD71E0074256B /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CalendarCreator_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-CalendarCreator__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Library/Services/";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = CalendarCreator;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = service;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FA7E1600CBBD7060074256B /* Build configuration list for PBXApplicationTarget "CalendarCreator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA7E1610CBBD7060074256B /* Development */,
+				4FA7E1620CBBD7060074256B /* Deployment */,
+				4FA7E1630CBBD7060074256B /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		4FA7E1640CBBD7060074256B /* Build configuration list for PBXProject "CalendarCreator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA7E1650CBBD7060074256B /* Development */,
+				4FA7E1660CBBD7060074256B /* Deployment */,
+				4FA7E1670CBBD7060074256B /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		4FA7E17C0CBBD71E0074256B /* Build configuration list for PBXNativeTarget "CalendarCreator (Upgraded)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA7E17D0CBBD71E0074256B /* Development */,
+				4FA7E17E0CBBD71E0074256B /* Deployment */,
+				4FA7E17F0CBBD71E0074256B /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
